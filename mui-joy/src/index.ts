@@ -1,1 +1,1 @@
-export * from './themes/index';
+export * from './theme/index';
