@@ -4,7 +4,13 @@
   "description": "Material UI Joy components for FuuWille",
   "keywords": [],
   "author": "k4yr2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fuuwille/fuuwille-ui.git"
+  },
+  "homepage": "https://github.com/fuuwille/fuuwille-ui/tree/main/packages/mui-joy#readme",
   "license": "ISC",
+  "main": "dist/index.js",
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
