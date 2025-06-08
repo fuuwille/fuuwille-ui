@@ -1,39 +1,43 @@
 import { extendTheme } from '@mui/joy/styles';
 
 export const mainTheme = extendTheme({
-  colorSchemes: {
-    dark: {
-      palette: {
-        background: {
-          body: '#1e1f24',
-          surface: '#2a2b30',
-          popup: '#2e2f34',
-          level1: '#32343a',
-          level2: '#3a3c42',
-          level3: '#44464d',
+    colorSchemes: {
+        dark: {
+            palette: {
+                background: {
+                    body: '#141414',
+                    surface: '#1A1C1F',
+                    level1: '#202225',
+                    level2: '#26282C',
+                    level3: '#2C2F34',
+                },
+                text: {
+                    primary: '#f5f5f5',
+                    secondary: '#b0b3b8',
+                },
+                neutral: {
+                    solidBg: '#2C2F34',
+                    solidHoverBg: '#3A3E44',
+                    plainColor: '#cfd2dc',
+                },
+                primary: {
+                    solidBg: '#2979ff',
+                    solidHoverBg: '#1565c0',
+                    plainColor: '#82b1ff',
+                },
+                success: {
+                    solidBg: '#2e7d32',
+                    solidHoverBg: '#1b5e20',
+                    plainColor: '#a5d6a7',
+                },
+                danger: {
+                    solidBg: '#d32f2f',
+                    solidHoverBg: '#b71c1c',
+                    plainColor: '#ef9a9a',
+                },
+            },
         },
-        text: {
-          primary: '#ffffff',
-          secondary: '#cfd2dc',
-        },
-        neutral: {
-          solidBg: '#3a3c42',
-          solidHoverBg: '#50525a',
-          plainColor: '#cfd2dc',
-        },
-        primary: {
-          solidBg: '#1976d2',
-          solidHoverBg: '#1565c0',
-          plainColor: '#90caf9',
-        },
-        success: {
-          solidBg: '#2e7d32',
-          solidHoverBg: '#1b5e20',
-          plainColor: '#a5d6a7',
-        },
-      },
-    },
-  },
+    }
 });
 
 export default mainTheme;
