@@ -1,6 +1,6 @@
 import { extendTheme } from '@mui/joy/styles';
-import mainPaletteNeutral from './paletteNeutral';
-import mainPaletteBackground from './paletteBackground';
+import mainPaletteNeutral from './dark/paletteNeutral';
+import mainPaletteBackground from './dark/paletteBackground';
 
 export const mainTheme = extendTheme({
     colorSchemes: {
