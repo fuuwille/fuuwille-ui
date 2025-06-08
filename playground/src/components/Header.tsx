@@ -9,14 +9,14 @@ export const Header = () => {
         <header className={style.header}>
             <Switch
                 checked={mode === "dark"}
-                onChange={toggleMode}
+                onChange={toggleMode ?? undefined}
                 slotProps={{
                     input: { 'aria-label': 'Toggle dark mode' },
                 }}
                 sx={{ marginLeft: 'auto' }}
             />
         </header>
-    );
+    ); 
 }
 
 export default Header;
