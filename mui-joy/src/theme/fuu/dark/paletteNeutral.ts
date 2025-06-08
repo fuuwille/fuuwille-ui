@@ -1,6 +1,6 @@
 import { PaletteNeutral } from "@mui/joy";
 
-export const mainPaletteNeutral : Partial<PaletteNeutral> = {
+export const fuuDarkPaletteNeutral : Partial<PaletteNeutral> = {
     50:  "#f5f5f7",  // Lightest shade (used for tooltip backgrounds, borders)
     100: "#e0e0e4",
     200: "#c6c6cb",
@@ -13,4 +13,4 @@ export const mainPaletteNeutral : Partial<PaletteNeutral> = {
     900: "#1c1c22",  // Background outside sheets/cards
 }
 
-export default mainPaletteNeutral;
+export default fuuDarkPaletteNeutral;

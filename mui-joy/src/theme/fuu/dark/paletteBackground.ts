@@ -1,6 +1,6 @@
 import { PaletteBackground } from "@mui/joy";
 
-export const mainPaletteBackground : Partial<PaletteBackground> = {
+export const fuuDarkPaletteBackground : Partial<PaletteBackground> = {
     body: '#141414',
     surface: '#1A1C1F',
     level1: '#202225',
@@ -8,4 +8,4 @@ export const mainPaletteBackground : Partial<PaletteBackground> = {
     level3: '#2C2F34',
 }
 
-export default mainPaletteBackground;
+export default fuuDarkPaletteBackground;

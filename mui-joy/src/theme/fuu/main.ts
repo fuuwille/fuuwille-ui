@@ -1,17 +1,17 @@
 import { extendTheme } from '@mui/joy/styles';
-import mainPaletteNeutral from './dark/paletteNeutral';
-import mainPaletteBackground from './dark/paletteBackground';
+import fuuDarkPaletteNeutral from './dark/paletteNeutral';
+import fuuDarkPaletteBackground from './dark/paletteBackground';
 
-export const mainTheme = extendTheme({
+export const fuuTheme = extendTheme({
     colorSchemes: {
         dark: {
             palette: {
-                background: mainPaletteBackground,
+                background: fuuDarkPaletteBackground,
                 text: {
                     primary: '#f5f5f5',
                     secondary: '#b0b3b8',
                 },
-                neutral: mainPaletteNeutral,
+                neutral: fuuDarkPaletteNeutral,
                 primary: {
                     solidBg: '#2979ff',
                     solidHoverBg: '#1565c0',
@@ -29,7 +29,26 @@ export const mainTheme = extendTheme({
                 },
             },
         },
+        light: {
+            palette: {
+                primary: {
+                    solidBg: '#1976d2',
+                    solidHoverBg: '#115293',
+                    plainColor: '#90caf9',
+                },
+                success: {
+                    solidBg: '#388e3c',
+                    solidHoverBg: '#1b5e20',
+                    plainColor: '#a5d6a7',
+                },
+                danger: {
+                    solidBg: '#d32f2f',
+                    solidHoverBg: '#b71c1c',
+                    plainColor: '#ef9a9a',
+                },
+            },
+        },
     }
 });
 
-export default mainTheme;
+export default fuuTheme;

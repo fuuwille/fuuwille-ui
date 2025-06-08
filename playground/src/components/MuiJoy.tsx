@@ -1,11 +1,11 @@
 import { Box, Button, Card, CardContent, CssBaseline, CssVarsProvider, Divider, Sheet, Stack, Typography, useColorScheme } from "@mui/joy";
 import { useAppTheme } from "../core/main";
 import { useEffect } from "react";
-import mainTheme from "../../../mui-joy/src/theme/fuu/main";
+import fuuTheme from "../../../mui-joy/src/theme/fuu/main";
 
 export const MuiJoy = () => {
   return (
-    <CssVarsProvider theme={mainTheme}>
+    <CssVarsProvider theme={fuuTheme}>
       <CssBaseline />
       <MuiJoyContent />
     </CssVarsProvider>
