@@ -1,17 +1,12 @@
 import { extendTheme } from '@mui/joy/styles';
 import mainPaletteNeutral from './paletteNeutral';
+import mainPaletteBackground from './paletteBackground';
 
 export const mainTheme = extendTheme({
     colorSchemes: {
         dark: {
             palette: {
-                background: {
-                    body: '#141414',
-                    surface: '#1A1C1F',
-                    level1: '#202225',
-                    level2: '#26282C',
-                    level3: '#2C2F34',
-                },
+                background: mainPaletteBackground,
                 text: {
                     primary: '#f5f5f5',
                     secondary: '#b0b3b8',
