@@ -17,11 +17,12 @@ export default MuiJoy;
 
 export const MuiJoyContent = () => {
     const { setMode } = useColorScheme();
-    const { bindSetter } = useAppTheme((state) => state);
+    const { mode, bindSetter } = useAppTheme((state) => state);
 
     useEffect(() => {
         bindSetter(setMode);
-    }, [setMode]);
+        setMode(mode as "light" | "dark");
+    }, []);  
 
     return (
         <Box sx={{ p: 4 }}>      
