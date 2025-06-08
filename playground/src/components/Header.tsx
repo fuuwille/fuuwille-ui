@@ -1,7 +1,9 @@
+import style from '../styles/Header.module.css';
+
 export const Header = () => {
     return (
-        <header>
-            
+        <header className={style.header}>
+
         </header>
     );
 }
