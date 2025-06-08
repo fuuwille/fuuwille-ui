@@ -1,16 +1,6 @@
-import { CssBaseline, CssVarsProvider, IconButton, useColorScheme } from "@mui/joy";
-import {
-  Box,
-  Typography,
-  Sheet,
-  Button,
-  Card,
-  CardContent,
-  Divider,
-  Stack
-} from "@mui/joy";
-import DarkMode from "@mui/icons-material/DarkMode";
-import LightMode from "@mui/icons-material/LightMode";
+import { Box, Button, Card, CardContent, CssBaseline, CssVarsProvider, Divider, Sheet, Stack, Typography, useColorScheme } from "@mui/joy";
+import { useAppTheme } from "../core/main";
+import { useEffect } from "react";
 
 export const MuiJoy = () => {
   return (
@@ -26,19 +16,15 @@ export default MuiJoy;
 //
 
 export const MuiJoyContent = () => {
-    const { mode, setMode } = useColorScheme();
+    const { setMode } = useColorScheme();
+    const { bindSetter } = useAppTheme((state) => state);
+
+    useEffect(() => {
+        bindSetter(setMode);
+    }, [setMode]);
 
     return (
         <Box sx={{ p: 4 }}>      
-            <Box sx={{ display: "flex", justifyContent: "flex-end", mb: 2 }}>
-                <IconButton
-                    variant="outlined"
-                    onClick={() => setMode(mode === "light" ? "dark" : "light")}
-                >
-                {mode === "light" ? <DarkMode /> : <LightMode />}
-                </IconButton>
-            </Box>
-
             <Typography level="h1" sx={{ mb: 2 }}>
                 🎨 Welcome to Fuuwille MUI Joy Theme
             </Typography>
