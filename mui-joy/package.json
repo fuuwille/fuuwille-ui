@@ -1,11 +1,9 @@
 {
-  "name": "mui-joy",
-  "version": "1.0.0",
-  "description": "",
-  "scripts": {
-  },
+  "name": "@fuuwille/mui-joy",
+  "version": "0.1.0",
+  "description": "Material UI Joy components for FuuWille",
   "keywords": [],
-  "author": "",
+  "author": "k4yr2",
   "license": "ISC",
   "dependencies": {
     "@emotion/react": "^11.14.0",
