@@ -1,4 +1,5 @@
 import { extendTheme } from '@mui/joy/styles';
+import mainPaletteNeutral from './paletteNeutral';
 
 export const mainTheme = extendTheme({
     colorSchemes: {
@@ -15,11 +16,7 @@ export const mainTheme = extendTheme({
                     primary: '#f5f5f5',
                     secondary: '#b0b3b8',
                 },
-                neutral: {
-                    solidBg: '#2C2F34',
-                    solidHoverBg: '#3A3E44',
-                    plainColor: '#cfd2dc',
-                },
+                neutral: mainPaletteNeutral,
                 primary: {
                     solidBg: '#2979ff',
                     solidHoverBg: '#1565c0',
