@@ -1,3 +1,3 @@
 export * from '../main';
 export * from './paletteBackground';
-export * from './paletteNeutral';
+export * from '../paletteNeutral';

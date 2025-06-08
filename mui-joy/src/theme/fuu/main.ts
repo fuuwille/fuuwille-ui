@@ -1,5 +1,5 @@
 import { extendTheme } from '@mui/joy/styles';
-import fuuDarkPaletteNeutral from './dark/paletteNeutral';
+import fuuPaletteNeutral from './paletteNeutral';
 import fuuDarkPaletteBackground from './dark/paletteBackground';
 
 export const fuuTheme = extendTheme({
@@ -11,7 +11,7 @@ export const fuuTheme = extendTheme({
                     primary: '#f5f5f5',
                     secondary: '#b0b3b8',
                 },
-                neutral: fuuDarkPaletteNeutral,
+                neutral: fuuPaletteNeutral,
                 primary: {
                     solidBg: '#2979ff',
                     solidHoverBg: '#1565c0',
@@ -31,6 +31,7 @@ export const fuuTheme = extendTheme({
         },
         light: {
             palette: {
+                neutral: fuuPaletteNeutral,
                 primary: {
                     solidBg: '#1976d2',
                     solidHoverBg: '#115293',
