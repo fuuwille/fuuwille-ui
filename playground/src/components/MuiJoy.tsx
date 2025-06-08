@@ -1,7 +1,7 @@
 import { Box, Button, Card, CardContent, CssBaseline, CssVarsProvider, Divider, Sheet, Stack, Typography, useColorScheme } from "@mui/joy";
 import { useAppTheme } from "../core/main";
 import { useEffect } from "react";
-import mainTheme from "../../../mui-joy/themes/main";
+import mainTheme from "../../../mui-joy/src/themes/main/theme";
 
 export const MuiJoy = () => {
   return (
