@@ -4,11 +4,15 @@ import App from './App.tsx'
 import '../styles/global.css'
 import { create } from 'zustand'
 
-createRoot(document.getElementById('root')!).render(
+const container = document.getElementById('root')!;
+const root = (container as any)._reactRoot ?? createRoot(container);
+(container as any)._reactRoot = root;
+
+root.render(
   <StrictMode>
     <App />
-  </StrictMode>,
-)
+  </StrictMode>
+);
 
 type AppMode = "light" | "dark";
 type AppModeSetter = (mode: AppMode) => void;
