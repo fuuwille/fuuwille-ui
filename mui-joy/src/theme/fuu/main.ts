@@ -1,6 +1,7 @@
 import { extendTheme } from '@mui/joy/styles';
 import fuuPaletteNeutral from './paletteNeutral';
 import fuuDarkPaletteBackground from './dark/paletteBackground';
+import fuuPaletteSuccess from './paletteSuccess';
 
 export const fuuTheme = extendTheme({
     colorSchemes: {
@@ -17,11 +18,7 @@ export const fuuTheme = extendTheme({
                     solidHoverBg: '#1565c0',
                     plainColor: '#82b1ff',
                 },
-                success: {
-                    solidBg: '#2e7d32',
-                    solidHoverBg: '#1b5e20',
-                    plainColor: '#a5d6a7',
-                },
+                success: fuuPaletteSuccess,
                 danger: {
                     solidBg: '#d32f2f',
                     solidHoverBg: '#b71c1c',
@@ -37,11 +34,7 @@ export const fuuTheme = extendTheme({
                     solidHoverBg: '#115293',
                     plainColor: '#90caf9',
                 },
-                success: {
-                    solidBg: '#388e3c',
-                    solidHoverBg: '#1b5e20',
-                    plainColor: '#a5d6a7',
-                },
+                success: fuuPaletteSuccess,
                 danger: {
                     solidBg: '#d32f2f',
                     solidHoverBg: '#b71c1c',
