@@ -54,9 +54,25 @@ export const MuiJoyContent = () => {
                             `outlined` with soft shadow and padding.
                         </Typography>
                         <Divider sx={{ my: 2 }} />
+                        <Button variant="solid" color="primary">
+                            Try It Now
+                        </Button>
+                        <Divider sx={{ my: 2 }} />
+                        <Button variant="solid" color="neutral">
+                            Try It Now
+                        </Button>
+                        <Divider sx={{ my: 2 }} />
                         <Button variant="solid" color="success">
                             Try It Now
                         </Button>
+                        <Divider sx={{ my: 2 }} />
+                        <Button variant="solid" color="danger">
+                            Try It Now
+                        </Button>
+                        <Divider sx={{ my: 2 }} />
+                        <Button variant="solid" color="warning">
+                            Try It Now
+                        </Button>                        
                     </CardContent>
                 </Card>
 
